@@ -1,0 +1,73 @@
+body {
+    background-color: green;
+}
+.container {
+    display:flex;
+    justify-content: center;
+
+}
+
+.img {
+    background-image: url("../Image/golfball.png");
+    width:1000px;
+    height:550px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+
+.banner-text {
+    font-size: 35px;
+    text-align: center;
+    background-color: navy;
+    color:white;
+    margin-top: 20px;
+}
+
+div[data-type='plugin']{
+    height: 150px;
+    width:150px;
+    margin-left:80%;
+    padding: 5px 5px 5px 5px;
+    z-index: 999;
+    -webkit-box-shadow: 9px 9px 72px -2px rgba(107,101,107,0.82);
+    -moz-box-shadow: 9px 9px 72px -2px rgba(107,101,107,0.82);
+    box-shadow: 9px 9px 72px -2px rgba(107,101,107,0.82);
+    border-radius:30px;
+    border: black;
+    background: url(../weather-plugin/_images/bg.gif);
+}
+@font-face{
+    font-family:per;
+    src: url(../weather-plugin/_fonts/AlegreyaSans-Black.otf);
+
+}
+.text{
+    text-align: center;
+    font-size:small;
+    margin:5px 0px 0px 1px;
+    color:#ff6600;
+}
+#icon{
+    margin-left:40%;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+#temp{
+
+    font-size:45px;
+}
+#desc{
+    font-variant:small-caps;
+}
+#close{
+    display:block;
+    height:30px;
+    width: 30px;
+    z-index: 1;
+    top: -5px;
+    margin-left:80%;
+    position:absolute;
+}
+
