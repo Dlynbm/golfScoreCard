@@ -26,11 +26,10 @@
 
 <button type="button" class="btn btn-primary btn-lg">Add Player</button>
 
-
-
-<div id="table" class="table-editable">
-    <span class="table-add glyphicon glyphicon-plus"></span>
-    <table class="table">
+    <div id="table" class="table-editable">
+        <table class="table">
+    <table class="table table-bordered">
+        <thead>
         <tr>
             <th scope="col">Hole</th>
             <th scope="col">1</th>
@@ -55,8 +54,13 @@
             <th scope="col">Out</th>
             <th scope="col">Total</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
-            <td>Par</td>
+            <th scope="row">Par</th>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
@@ -77,7 +81,7 @@
             <td contenteditable="true"></td>
 
         </tr>
-        <tr>
+        <tr class = "player">
             <td contenteditable="true">Player<span class="glyphicon glyphicon-minus-sign"></span></td>
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
@@ -97,10 +101,12 @@
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
-        </tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td></td>
 
-    </table>
-</div>
+        </tr>
+        </tbody>
 
 
 <script src="//code.jquery.com/jquery-1.12.1.js"></script>
@@ -108,5 +114,6 @@
 
 <script src="JS/golfCard.js"></script>
 <script src = "map.js"></script>
+    </table>
 </body>
 </html>
