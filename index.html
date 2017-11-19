@@ -9,11 +9,11 @@
 
 </head>
 
+<body onload="loadMe()">
 
-<body>
-
-
+<select id="selectCourse">Select Golf Course</select>
 <div class = "container">
+
 
 
 <div class = "img">
@@ -24,58 +24,89 @@
 </div>
 </div>
 
+<button type="button" class="btn btn-primary btn-lg">Add Player</button>
 
-<div class = "addplayer">
-    <button type = "button" id="addPlayer" class = "btn btn-success">Add Player</button>
+
+
+<div id="table" class="table-editable">
+    <span class="table-add glyphicon glyphicon-plus"></span>
+    <table class="table">
+        <tr>
+            <th scope="col">Hole</th>
+            <th scope="col">1</th>
+            <th scope="col">2</th>
+            <th scope="col">3</th>
+            <th scope="col">4</th>
+            <th scope="col">5</th>
+            <th scope="col">6</th>
+            <th scope="col">7</th>
+            <th scope="col">8</th>
+            <th scope="col">9</th>
+            <th scope="col">10</th>
+            <th scope="col">11</th>
+            <th scope="col">12</th>
+            <th scope="col">13</th>
+            <th scope="col">14</th>
+            <th scope="col">15</th>
+            <th scope="col">16</th>
+            <th scope="col">17</th>
+            <th scope="col">18</th>
+            <th scope="col">In</th>
+            <th scope="col">Out</th>
+            <th scope="col">Total</th>
+        </tr>
+        <tr>
+            <td>Par</td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+
+        </tr>
+        <tr>
+            <td contenteditable="true">Player<span class="glyphicon glyphicon-minus-sign"></span></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+        </tr>
+
+    </table>
 </div>
-<table class="table table-bordered">
-    <thead>
-    <tr>
-        <th scope="col">Hole</th>
-        <th scope="col">1</th>
-        <th scope="col">2</th>
-        <th scope="col">3</th>
-        <th scope="col">4</th>
-        <th scope="col">5</th>
-        <th scope="col">6</th>
-        <th scope="col">7</th>
-        <th scope="col">8</th>
-        <th scope="col">9</th>
-        <th scope="col">10</th>
-        <th scope="col">11</th>
-        <th scope="col">12</th>
-        <th scope="col">13</th>
-        <th scope="col">14</th>
-        <th scope="col">15</th>
-        <th scope="col">16</th>
-        <th scope="col">17</th>
-        <th scope="col">18</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th scope="row">Player<span class = "glyphicon glyphicon-minus-sign"></span></th>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <th scope="row">Player<span class = "glyphicon glyphicon-minus-sign"></span></th>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <th scope="row">Player<span class = "glyphicon glyphicon-minus-sign"></span></th>
-        <td colspan="2"></td>
-        <td></td>
-    </tr>
-    </tbody>
-</table>
+
+
 <script src="//code.jquery.com/jquery-1.12.1.js"></script>
-<script src="weather.js"></script>
-<script src="/libs/jquery-2.1.1.min.js"></script>
-<script src="/DataTables-1.10.4/media/js/jquery.dataTables.js"></script>
+<script src="JS/weather.js"></script>
+
 <script src="JS/golfCard.js"></script>
+<script src = "map.js"></script>
 </body>
 </html>
