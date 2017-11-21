@@ -1,5 +1,5 @@
 body {
-    background-color: red;
+    background-color: white;
 }
 .container {
     display:flex;
@@ -71,9 +71,17 @@ div[data-type='plugin']{
     position:absolute;
 }
 
-#table {
-    width:100%;
-    border-radius: 5px;
-    border:2px solid black;
+.playercolumn {
+    border: 1px solid #CCC;
+    width:30px;
+    min-height: 70px;
 }
+
+.scorecolumn{
+    border: 1px solid #CCC;
+    width:30px;
+    min-height: 70px;
+
+}
+
 
