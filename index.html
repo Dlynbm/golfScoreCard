@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Golf Score Card</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="Styles/golfCard.css">
+
 
 
 </head>
 
 <body onload="loadMe()">
+<div class = "container">
+
+    <select id="courseselect" onchange="getCourse(this.value)">
+
+    </select>
+    <select id = "teeselect" onchange="buildCard(this.value)"></select>
+</div>
+<h6>Choose a golf course to begin</h6>
 
 <div class = "img">
-
-    <div class = "container">
-
-        <select id="courseselect" onchange="getCourse(this.value)">
-
-        </select>
-        <select id = "teeselect" onchange="buildCard(this.value)"></select>
-    </div>
-
-    <div class ="banner-text">Golf Score Card
+    <div class ="banner-text">GOLF SCORE CARD
 
     </div>
-    <div data-type="plugin"></div>
+
 </div>
 
+<button type="button" class="btn btn-primary btn-sm">Add Player</button>
 
 <div class = "card">
     <div class = "playercolumn">
     </div>
 
     <div class ="scorecolumn">
+
     </div>
+</div>
 
 
 
-<script src="//code.jquery.com/jquery-1.12.1.js"></script>
-<script src="JS/weather.js"></script>
+
 <script src="JS/golfCard.js"></script>
 
 
