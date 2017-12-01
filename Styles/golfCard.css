@@ -120,12 +120,17 @@ h6 {
 }
 
 .holeheader {
+    /*display: grid;*/
+    /*grid-template-columns: 10px;
+    grid-template-rows:10px;*/
     color:white;
-    width: 40px;
+
     background-color: lightgrey;
-    border: 1px solid #CCC;
+    border: 1px solid black;
     font-size: 10px;
     padding-top: 15px;
+
+
 
 }
 
@@ -136,10 +141,12 @@ h6 {
 
 }
 
-/*.totalc column{
-    margin-left: 5px;
+.totalc {
+   display: grid;
+    grid-template-columns: 20px;
+    grid-template-rows: 20px;
 
-}*/
+}
 
 
 

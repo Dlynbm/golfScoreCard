@@ -2,7 +2,8 @@ var closeCourses;
 var currentCourse;
 var local_obj = {latitude: 40.4426135, longitude: -111.8631116, radius:100};
 var numholes;
-var numplayers = 5;
+var numplayers = 4;
+
 
 
 
@@ -56,6 +57,7 @@ function fillCard(){
 
 function deleteplayer (playerid) {
     $("#pl" + playerid).remove();
+    $("#totalhole"+ playerid).remove();
 
     for( var h = 1; h <= numholes.length; h++) {
         $("#player" + playerid + "hole" + h).remove();
@@ -69,6 +71,24 @@ function updatescore(playerid) {
     }
     $("#totalhole" + playerid).val(playertotal);
 }
+
+
+
+function addplayer(playerid) {
+    var numplayers = 1;
+        for(var p = 1; p <= numplayers; p++) {
+            $(".playercolumn").append("<div id='pl" + p + "'><span class='deletebtn' onclick='deleteplayer(" + p + ")'><i class=\"glyphicon glyphicon-remove-circle\" aria-hidden=\"true\"'></i></span><span contenteditable='true' id='pl'>Player</span></span>");
+            $(".totalc").append("<input type = 'text' class = 'holeinput' id = 'totalhole" + p + "'>");
+            for (var h = 1; h <= numholes.length; h++) {
+                $("#column" + h).append("<input id = 'player" + p + "hole" + h + "' type= 'text' class= 'holeinput' onkeyup = 'updatescore(" + p + ")'/>");
+            }
+        }
+
+        }
+
+
+
+
 
 
 
