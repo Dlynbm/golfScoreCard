@@ -36,7 +36,7 @@ function buildCard(mytee){
     for(var c in numholes){
         var holepar = currentCourse.course.holes[c].tee_boxes[mytee].par;
         var gethcp = currentCourse.course.holes[c].tee_boxes[mytee].hcp;
-        $(".scorecolumn").append("<div id='column" + (Number(c) + 1) + "' class='column'><div class = 'holeheader'>Hole <div>" + (Number(c) + 1) +" </div><div>Par " + holepar +"</div><div class='hcp'>HCP "+ gethcp + "</div></div>");
+        $(".scorecolumn").append("<div id='column" + (Number(c) + 1) + "' class='column'><div class = 'holeheader'><div>" + (Number(c) + 1) +" </div><div>Par " + holepar +"</div><div class='hcp'>HCP "+ gethcp + "</div></div>");
 
     }
     $(".scorecolumn").append("<div class = 'totalc column'><div class = 'holeheader'>Total</div></div>");
@@ -48,7 +48,7 @@ function fillCard(){
         $(".playercolumn").append("<div id='pl" + p +"'><span class='deletebtn' onclick='deleteplayer("+ p +")'><i class=\"glyphicon glyphicon-remove-circle\" aria-hidden=\"true\"'></i></span><span contenteditable='true' id='pl'>Player</span></span>");
         $(".totalc").append("<input type = 'text' class = 'holeinput' id = 'totalhole" + p + "'>");
         for (var h = 1; h <= numholes.length; h++){
-            $("#column" + h).append("<input id = 'player" + p +"hole" + h +"' type= 'text' class= 'holeinput' onkeyup = 'updatescore(" + p +")'/>");
+            $("#column" + h).append("<input id = 'player" + p +"hole" + h +"' type= 'number' class= 'holeinput' onkeyup = 'updatescore(" + p +")'/>");
         }
 
     }
@@ -85,8 +85,6 @@ function addplayer(playerid) {
         }
 
         }
-
-
 
 
 

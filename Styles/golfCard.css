@@ -60,9 +60,11 @@ h6 {
 
 .btn-sm{
     font-size: 25px;
-    margin-left: 210px;
+    margin-left: 5px;
     margin-bottom: 5px;
+    margin-top: 5px;
     background-color: darkseagreen;
+
 }
 
 .text{
@@ -80,16 +82,12 @@ h6 {
     flex-direction: column;
     height: 150px;
     float: left;
-    color: white;
+    color: black;
     font-size: 15px;
-    margin: 10px;
+    /*margin: 10px;*/
     padding-top: 33px;
-    line-height: 24px;
-}
-
-#pl {
-    margin:25px;
-    line-height: 37px;
+    line-height: 42px;
+    text-align: center;
 }
 
 .scorecolumn {
@@ -102,7 +100,6 @@ h6 {
 }
 
 .card {
-    /*border:1px solid #CCC;*/
     display: flex;
     align-items: center;
     margin: auto;
@@ -116,21 +113,18 @@ h6 {
 .glyphicon-remove-circle {
     color:red;
     float: right;
-    align-items: baseline;
 }
 
 .holeheader {
-    /*display: grid;*/
-    /*grid-template-columns: 10px;
-    grid-template-rows:10px;*/
     color:white;
-
     background-color: lightgrey;
     border: 1px solid black;
-    font-size: 10px;
-    padding-top: 15px;
-
-
+    font-size: 15px;
+    display: flex;
+    width: 40px;
+    margin: 5px;
+    height: 75px;
+   justify-content: center;
 
 }
 
@@ -139,14 +133,27 @@ h6 {
     width: 40px;
     margin: 5px;
 
-}
-
-.totalc {
-   display: grid;
-    grid-template-columns: 20px;
-    grid-template-rows: 20px;
 
 }
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+
+}
+
+.bottomcontainer{
+    background-color: white;
+    width:1000px;
+    display: block;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
 
 
 
