@@ -1,5 +1,5 @@
 body {
-background-color: midnightblue;
+background-color: #337ab7;
 
 }
 .container {
@@ -85,7 +85,7 @@ h6 {
     color: black;
     font-size: 15px;
     /*margin: 10px;*/
-    padding-top: 33px;
+    padding-top: 54px;
     line-height: 42px;
     text-align: center;
 }
@@ -117,14 +117,14 @@ h6 {
 
 .holeheader {
     color:white;
-    background-color: lightgrey;
+    background-color: #337ab7;
     border: 1px solid black;
-    font-size: 15px;
-    display: flex;
+    font-size: 10px;
     width: 40px;
     margin: 5px;
-    height: 75px;
-   justify-content: center;
+    height: 100px;
+    text-align: center;
+    align-items:center;
 
 }
 
