@@ -160,18 +160,21 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
-.par {
-    border: 1px solid black;
-    background-color: lightgrey;
-    height:25px;
-}
-
 .yards{
     border: 1px solid black;
     background-color: #337ab7;
     height:30px;
 
 }
+
+.par{
+    border: 1px solid black;
+    background-color: lightgrey;
+    height:25px;
+}
+
+
+
 
 
 
